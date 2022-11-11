@@ -27,7 +27,7 @@ var args = getopts(location.search,
 {
   default:
   {
-    ws_uri: 'ws://' + location.hostname + ':8888/kurento',
+    ws_uri: 'ws://' + "95.216.146.44" + ':8888/kurento',
     ice_servers: undefined
   }
 });
@@ -44,7 +44,7 @@ window.addEventListener('load', function(){
   console = new Console('console', console);
 	var videoOutput = document.getElementById('videoOutput');
 	var address = document.getElementById('address');
-	address.value = 'http://files.kurento.org/video/puerta-del-sol.ts';
+	address.value = 'rtsp://admin:admin@93.77.57.4:8554/live/0/MAIN';
   var pipeline;
   var webRtcPeer;
 
